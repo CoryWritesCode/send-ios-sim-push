@@ -11,7 +11,7 @@ const defaultMessage: Message = {
   },
 };
 
-function sendSimulatorPushNotification(bundleId: string, message: Message) {
+export function sendSimulatorPushNotification(bundleId: string, message: Message) {
   exec(
     `echo '${JSON.stringify(
       message ?? defaultMessage
