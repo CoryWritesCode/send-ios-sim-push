@@ -1,0 +1,22 @@
+{
+  "name": "send-ios-sim-push",
+  "version": "1.0.0",
+  "description": "Small package to allow you to send push notifications to an open iOS Simulator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "iOS",
+    "simulator",
+    "push notifications"
+  ],
+  "author": "CoryWritesCode <corycunningham2010@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.18"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}
