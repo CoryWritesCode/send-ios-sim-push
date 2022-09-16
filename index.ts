@@ -1,6 +1,15 @@
 import { exec } from "child_process";
 
-export type Message = {}
+export type Message = {
+  aps: {
+    alert: {
+      title: string;
+      body: string;
+    } | string;
+    badge?: number;
+    sound?: "Default";
+  }
+}
 
 const defaultMessage: Message = {
   aps: {
@@ -11,7 +20,7 @@ const defaultMessage: Message = {
   },
 };
 
-export function sendSimulatorPushNotification(bundleId: string, message: Message) {
+export function sendSimulatorPushNotification(bundleId: string, message?: Message) {
   exec(
     `echo '${JSON.stringify(
       message ?? defaultMessage
