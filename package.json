@@ -1,6 +1,6 @@
 {
   "name": "send-ios-sim-push",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Small package to allow you to send push notifications to an open iOS Simulator.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
