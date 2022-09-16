@@ -25,9 +25,7 @@ export function sendSimulatorPushNotification(bundleId: string, message?: Messag
     `echo '${JSON.stringify(
       message ?? defaultMessage
     )}' | xcrun simctl push booted ${bundleId} -`,
-    function (error) {
-      `echo ERROR: ${JSON.stringify(error)}`;
-    }
+    (error) => `echo ERROR: ${JSON.stringify(error)}`
   );
 }
 
