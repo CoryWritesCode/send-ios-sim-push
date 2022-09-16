@@ -1,6 +1,6 @@
 {
   "name": "send-ios-sim-push",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Small package to allow you to send push notifications to an open iOS Simulator.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -12,7 +12,7 @@
     "preversion": "npm run lint",
     "version": "npm run format",
     "postversion": "git push && git push --tags",
-    "format": "prettier --write \"/**/*.ts\" \"/**/*.js\"",
+    "format": "prettier --write \"./**/*.ts\"",
     "lint": "tslint -p tsconfig.json"
   },
   "keywords": [
